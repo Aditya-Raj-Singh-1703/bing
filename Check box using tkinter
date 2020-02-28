@@ -1,0 +1,17 @@
+import tkinter
+wind = tkinter.Tk()
+wind.geometry('400x400')
+lb=tkinter.Label(wind,text="Username",font=('Arial',15))
+lb.grid(column=0,row=0)
+user=tkinter.Entry(wind,width=15)
+user.grid(column=1,row=0)
+
+lb1=tkinter.Label(wind,text="Password",font=('Arial',15))
+lb1.grid(column=0,row=1)
+pwd=tkinter.Entry(wind,width=10)
+pwd.grid(column=1,row=1)
+#To create a check box
+chk_state=tkinter.BooleanVar()
+chk_state.set(True)
+ck=tkinter.Checkbutton(wind,text='Select your Option',var=chk_state)
+ck.grid(column=1,row=2)
